@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(171, 66%, 44%);
+  --primary-color-2: hsl(233, 100%, 69%);
+
+  --secondary-color: hsl(210, 10%, 33%);
+  --secondary-color-2: hsl(201, 11%, 66%);
+}
+
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-bg {
+  margin-bottom: 3rem;
+}
+
+.mb-hg {
+  margin-bottom: 8rem;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}

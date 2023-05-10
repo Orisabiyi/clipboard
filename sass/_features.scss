@@ -1,0 +1,19 @@
+.features {
+  padding: 5rem 0;
+  text-align: center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    text-align: left;
+  }
+
+  &__img {
+    transform: translateX(-3rem);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

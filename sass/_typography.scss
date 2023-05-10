@@ -1,0 +1,32 @@
+%headings { color: var(--secondary-color); }
+%paragraph{ 
+  color: var(--secondary-color-2);
+  width: 60%;
+}
+
+.heading-1 {
+  @extend %headings;
+  font-size: 4.3rem;
+}
+
+.heading-2 {
+  @extend %headings;
+  font-size: 3.3rem;
+}
+
+.heading-3 {
+  @extend %headings;
+  font-size: 2.3rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  @extend %paragraph;
+  
+  margin: auto;
+
+  &--small {
+    font-size: 1.6rem;
+    @extend %paragraph;
+  }
+}

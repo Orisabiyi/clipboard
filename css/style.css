@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+:root {
+  --primary-color: hsl(171, 66%, 44%);
+  --primary-color-2: hsl(233, 100%, 69%);
+  --secondary-color: hsl(210, 10%, 33%);
+  --secondary-color-2: hsl(201, 11%, 66%); }
+
+.mb-sm {
+  margin-bottom: 1rem; }
+
+.mb-md {
+  margin-bottom: 2rem; }
+
+.mb-bg {
+  margin-bottom: 3rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.logo {
+  width: 12rem;
+  height: auto;
+  margin-top: 6rem; }
+
+.btn:link, .btn:visited {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  display: inline-block; }
+
+.btn--1 {
+  background-color: var(--primary-color);
+  box-shadow: 0 0.5rem 1.5rem rgba(38, 186, 164, 0.5); }
+
+.btn--2 {
+  background-color: var(--primary-color-2);
+  box-shadow: 0 0.5rem 1.5rem rgba(97, 115, 255, 0.5); }
+
+.features {
+  padding: 5rem 0;
+  text-align: center; }
+  .features__content {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    text-align: left; }
+  .features__img {
+    transform: translateX(-3rem); }
+  .features__item:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.header {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/bg-header-desktop.png);
+  background-blend-mode: color-burn;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .header__content {
+    text-align: center;
+    padding: 5rem 0; }
+  .header__btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem; }
+
+.properties {
+  padding: 5rem 0;
+  text-align: center; }
+  .properties__img {
+    margin-top: 8rem; }
+
+.heading-1, .heading-2, .heading-3 {
+  color: var(--secondary-color); }
+
+.paragraph, .paragraph--small {
+  color: var(--secondary-color-2);
+  width: 60%; }
+
+.heading-1 {
+  font-size: 4.3rem; }
+
+.heading-2 {
+  font-size: 3.3rem; }
+
+.heading-3 {
+  font-size: 2.3rem; }
+
+.paragraph {
+  font-size: 2rem;
+  margin: auto; }
+  .paragraph--small {
+    font-size: 1.6rem; }
