@@ -13,7 +13,11 @@
     transform: translateX(-3rem);
   }
 
-  &__item:not(:last-child) {
+  &__collection {
+    flex: 1;
+  }
+
+  &__collection-item:not(:last-child) {
     margin-bottom: 3rem;
   }
 }

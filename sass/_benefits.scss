@@ -1,0 +1,23 @@
+.benefits {
+  padding: 6rem 0;
+  text-align: center;
+
+  &__content {
+    margin-top: 7rem;
+    padding: 0 10rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__item {
+    flex: 1;
+  }
+
+  &__img {
+    width: 4.2rem;
+    height: 3.2rem;
+    margin-bottom: 3rem;
+  }
+}

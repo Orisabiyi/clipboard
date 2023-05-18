@@ -17,7 +17,14 @@ html {
 
   --secondary-color: hsl(210, 10%, 33%);
   --secondary-color-2: hsl(201, 11%, 66%);
+
+  //Transparent
+  --secondary-color-transparent: hsla(212, 10%, 33%, 0.153);
 }
+
+// COLOR VARIABLE
+$primary-color: hsl(171, 66%, 44%);
+$primary-color-2: hsl(233, 100%, 69%);
 
 .mb-sm {
   margin-bottom: 1rem;
