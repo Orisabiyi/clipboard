@@ -1,6 +1,10 @@
 .benefits {
-  padding: 6rem 0;
+  padding: 10rem 0;
   text-align: center;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 
   &__content {
     margin-top: 7rem;
@@ -9,6 +13,15 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+
+    @include respond(tab-land) {
+      padding: 0 6rem;
+    }
+
+    @include respond(tab-port-1) {
+      flex-direction: column;
+      gap: 7rem;
+    }
   }
 
   &__item {
@@ -19,5 +32,11 @@
     width: 4.2rem;
     height: 3.2rem;
     margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2rem;
+      width: 5rem;
+      height: 4rem;
+    }
   }
 }

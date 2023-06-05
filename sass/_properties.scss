@@ -1,8 +1,20 @@
 .properties {
-  padding: 5rem 0;
+  padding: 10rem 0;
   text-align: center;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 
   &__img {
     margin-top: 8rem;
+
+    @include respond(tab-land) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      margin-top: 4rem;
+    }
   }
 }

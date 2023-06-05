@@ -5,4 +5,13 @@
   justify-content: center;
   align-items: center;
   gap: 10rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  @include respond(tab-land) {    
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
 }

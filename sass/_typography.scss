@@ -1,33 +1,90 @@
-%headings { color: var(--secondary-color); }
+%headings { 
+  color: var(--secondary-color);
+}
+
 %paragraph{ 
   color: var(--secondary-color-2);
   width: 60%;
+
+  @include respond(tab-land) {
+    width: 100%;
+  }
 }
 
 .heading-1 {
   @extend %headings;
   font-size: 4.3rem;
+
+  @include respond(tab-land) {
+      font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .heading-2 {
   @extend %headings;
   font-size: 3.3rem;
   text-align: center;
+
+  @include respond(tab-land) {
+      font-size: 4.3rem;
+  }
 }
 
 .heading-3 {
   @extend %headings;
   font-size: 2.3rem;
+
+  @include respond(tab-land) {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
+  
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .paragraph {
-  font-size: 2rem;
   @extend %paragraph;
+  font-size: 2rem;
   margin: 0 auto;
+  
+  @include respond(tab-land) {
+    font-size: 4rem;
+    padding: 3rem 9rem;
+    margin: 0;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
 
   &--small {
-    font-size: 1.6rem;
     @extend %paragraph;
+    font-size: 1.6rem;
+
+    @include respond(tab-land) {
+      font-size: 2.75rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 4rem;
+      width: 70%;
+      margin: auto;
+    }
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
 
   &--1 {
@@ -35,5 +92,22 @@
     margin: 0;
     width: 100%;
     margin-top: 3rem;
+    color: var(--secondary-color-2);
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+
+    @include respond(tab-port-1) {
+      font-size: 4rem;
+      width: 70%;
+      margin: auto;
+    }
+
+    @include respond(phone) {
+      font-size: 3rem;
+      width: 80%;
+    }
   }
 }

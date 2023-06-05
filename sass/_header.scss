@@ -1,8 +1,10 @@
 .header {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/bg-header-desktop.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                    url(../images/bg-header-desktop.png);
   background-blend-mode: color-burn;
   background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
 
   display: flex;
@@ -13,5 +15,15 @@
   &__content {
     text-align: center;
     padding: 5rem 0;
+  }
+
+  @include respond(tab-land) {
+    min-height: 80vh;
+  }
+
+  @include respond(phone) {
+    min-height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                    url(../images/bg-header-mobile.png);
   }
 }

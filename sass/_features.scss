@@ -3,21 +3,56 @@
   text-align: center;
 
   &__content {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8rem;
     text-align: left;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      gap: 10rem;
+      text-align: center;
+    }
   }
 
   &__img {
     transform: translateX(-3rem);
+
+    @include respond(tab-land) {
+      transform: translateX(0);
+      max-width: 80%;
+    }
   }
 
   &__collection {
     flex: 1;
+
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+      flex: 0 0 auto;
+      gap: 3rem;
+      padding: 0 3rem;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      width: 100%;
+      gap: 6rem;
+    }
   }
 
   &__collection-item:not(:last-child) {
     margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+     margin-bottom: 0;
+    }
+  }
+
+  &__collection-item {
+    flex: 1;
   }
 }
